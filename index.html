@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculater</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="main-section container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="d-flex justify-content-center w-100">
+            <div class="col-12 md:col-5">
+                <div class="card p-4 shadow-lg ">
+
+                    <!-- header -->
+                    <div class="text-center">
+                        <span class="fg-accent mb-3 fs-4xl">
+                            <i class="fa-solid fa-calculator"></i>
+                        </span>
+                        <h2>Product Price Calculator</h2>
+                        <p>Calculate your total price easily</p>
+
+                    </div>
+
+                    <!-- Product Form -->
+                    <div class="mb-4">
+                        <label for="product" class="form-label">
+                            <span class="fg-accent">
+                                <i class="fa-solid fa-cube"></i>
+                                Product
+                            </span>
+                        </label>
+                        <select name="product" id="product" class="form-control">
+                            <option value="">  Select Product </option>
+                            <option value="800">laptop-$800</option>
+                            <option value="500">phone-$500</option>
+                            <option value="200">watch-$200</option>
+                        </select>
+                    </div>
+
+                    <!-- Quantity Form -->
+                    <div class="mb-4">
+                        <label for="product" class="form-label">
+                            <span class="fg-accent">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Quantity
+                            </span>
+                        </label>
+                        <input type="text" id="quantity" class="form-control" placeholder="Enter Quantity">
+
+                    </div>
+
+                    <!-- Discount Form -->
+                    <div class="mb-4">
+                        <label for="product" class="form-label">
+                            <span class="fg-accent">
+                                <i class="fa-solid fa-percent"></i>
+                                Discount
+                            </span>
+                        </label>
+                        <input type="text" id="discount" class="form-control" placeholder="Enter Discount">
+
+                    </div>
+
+                    <!-- buuton -->
+                    <button  onclick=" calculatePrice()" class="btn-solid theme-accent fw-semibold">Calcutate Price</button>
+
+                    <h2 id="result"></h2>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- js -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
